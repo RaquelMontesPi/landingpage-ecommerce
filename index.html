@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Store - Productos para el Hogar</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra de navegación fija -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Home Store</a>
+      <div class="menu-icon" id="menu-icon">
+         <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+         <li class="nav-item"><a href="#cabecera" class="nav-link">Inicio</a></li> <!-- icono de lupa -->
+         <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li> <!-- icono de carrito -->
+         <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="nav-icons">
+         <a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+         <a href="#" class="nav-icon"><i class="fa-solid fa-cart-plus"></i></a> 
+         <a href="#" class="nav-icon"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de Cabecera con slider de 3 imágenes -->
+  <header id="cabecera" class="header-section">
+    <div class="header-slider">
+      <img src="img/slider1.jpeg" alt="Imagen 1" class="slide active">
+      <img src="img/slider2.jpeg" alt="Imagen 2" class="slide">
+      <img src="img/slider3.jpeg" alt="Imagen 3" class="slide">
+    </div>
+    <div class="header-text">
+      <h1>Bienvenido a Home Store</h1>
+      <p>Descubre los mejores productos para embellecer tu hogar</p>
+    </div>
+  </header>
+
+  <!-- Sección de Productos -->
+  <section id="productos" class="products-section">
+    <h2>Productos Destacados</h2>
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-slider">
+          <img src="img/card_1-1.jpg" alt="Producto 1" class="slide active">
+          <img src="img/card_1-2.jpg.jpg" alt="Producto 1" class="slide">
+        </div>
+        <div class="card-content">
+          <h3>Olla antiadherente</h3>
+          <p>Ollas 28cm.</p>
+          <div class="card-actions">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-slider">
+          <img src="img/card_2-1.jpg" alt="Producto 2" class="slide active">
+          <img src="img/card_2-2.jpg" alt="Producto 2" class="slide">
+        </div>
+        <div class="card-content">
+          <h3>Olla</h3>
+          <p>Olla de acero inoxidable negro.</p>
+          <div class="card-actions">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-slider">
+          <img src="img/card_3-1.jpg" alt="Producto 3" class="slide active">
+          <img src="img/card_3-2.jpg" alt="Producto 3" class="slide">
+        </div>
+        <div class="card-content">
+          <h3>Plato de cerámica</h3>
+          <p>Hecho a mano, vajilla de gres.</p>
+          <div class="card-actions">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-slider">
+          <img src="img/card_4-1.jpg" alt="Producto 4" class="slide active">
+          <img src="img/card_4-2.jpg" alt="Producto 4" class="slide">
+        </div>
+        <div class="card-content">
+          <h3>Utensilios de cocina</h3>
+          <p>Descripción breve del producto 4Juego de utensilios de madera.</p>
+          <div class="card-actions">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="contact-section">
+    <h2>Contacto</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+         <label for="name">Nombre:</label>
+         <input type="text" id="name" name="name" required>
+         <span class="error-message"></span>
+      </div>
+      <div class="form-group">
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+         <span class="error-message"></span>
+      </div>
+      <div class="form-group">
+         <label for="subject">Asunto:</label>
+         <input type="text" id="subject" name="subject" required>
+         <span class="error-message"></span>
+      </div>
+      <div class="form-group">
+         <label for="message">Mensaje:</label>
+         <textarea id="message" name="message" required></textarea>
+         <span class="error-message"></span>
+      </div>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Modal de éxito para el formulario -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>¡Gracias por contactarnos! Su mensaje ha sido enviado correctamente.</p>
+    </div>
+  </div>
+
+  <!-- Botón fijo para volver al inicio -->
+  <button id="scrollToTopBtn" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Home Store. Todos los derechos reservados.</p>
+      <div class="footer-icons">
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+         <a href="#"><i class="fa-brands fa-twitter"></i></a>
+         <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/b95a248e77.js" crossorigin="anonymous"></script>
+</body>
+</html>
